@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Nazwa</title>
 </head>
 <body>
-
+    {% for zmienna in HTML_DATA %}
+        Chusteczki: {{ zmienna }} <br>
+        Nazwa: {{ zmienna.nazwa }} <br>
+        Ilosc: {{ zmienna.ilosc }} <br>
+        Lokacja: {{ zmienna.lokacja }} <br>
+        Klucz: {{ zmienna.lokacja.klucz}} <br>
+    {% endfor%}
 </body>
 </html>
